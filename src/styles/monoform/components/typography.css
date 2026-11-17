@@ -1,0 +1,81 @@
+@layer components {
+  /* --- Headings --- */
+
+  .heading-section {
+    @apply text-xl font-semibold tracking-tight text-foreground;
+  }
+
+  .heading-subsection {
+    @apply text-base font-semibold tracking-tight text-foreground;
+  }
+
+  .heading-eyebrow {
+    @apply text-sm font-medium;
+  }
+
+  /* --- Numeric display --- */
+
+  .text-metric {
+    @apply text-4xl font-medium tracking-tight tabular-nums leading-none text-foreground;
+  }
+
+  /* --- Body text --- */
+
+  .text-lead {
+    @apply text-lg leading-relaxed text-muted-foreground;
+  }
+
+  .text-body {
+    @apply text-sm leading-relaxed text-foreground;
+  }
+
+  .text-subtle {
+    @apply text-sm text-muted-foreground;
+  }
+
+  .text-caption {
+    @apply text-xs text-muted-foreground;
+  }
+
+  /* --- Inline --- */
+
+  .link {
+    @apply text-primary underline-offset-4 hover:underline;
+  }
+
+  .link-muted {
+    @apply text-muted-foreground underline-offset-4 hover:text-foreground hover:underline;
+  }
+
+  .kbd {
+    @apply inline-flex h-5 items-center rounded border border-border bg-muted px-1.5 font-mono text-[0.7rem] font-medium text-muted-foreground;
+  }
+
+  .code-inline {
+    @apply rounded bg-muted px-[0.3rem] py-[0.15rem] font-mono text-[0.85em] text-foreground;
+  }
+
+  /* --- Lists --- */
+
+  .list-bulleted {
+    @apply ml-6 list-disc space-y-1 text-sm text-foreground;
+
+    & > li::marker { @apply text-muted-foreground; }
+  }
+
+  .list-numbered {
+    @apply ml-6 list-decimal space-y-1 text-sm text-foreground;
+
+    & > li::marker { @apply text-muted-foreground; }
+  }
+
+  /* --- Block --- */
+
+  .blockquote {
+    @apply border-l-2 border-border pl-4 text-sm italic text-muted-foreground;
+  }
+
+  .prose-divider {
+    @apply my-4 h-px w-full bg-border;
+  }
+}

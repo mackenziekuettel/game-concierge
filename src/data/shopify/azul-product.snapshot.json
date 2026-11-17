@@ -1,0 +1,735 @@
+{
+  "savedAt": "2026-11-16T23:02:26Z",
+  "tool": "get_product",
+  "response": {
+    "ucp": {
+      "version": "2026-08-25",
+      "capabilities": {
+        "dev.ucp.shopping.catalog.search": [
+          {
+            "version": "2026-08-25",
+            "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+            "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json"
+          }
+        ],
+        "dev.ucp.shopping.catalog.lookup": [
+          {
+            "version": "2026-08-25",
+            "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+            "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json"
+          }
+        ],
+        "dev.shopify.catalog.global": [
+          {
+            "version": "2026-08-25",
+            "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+            "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+            "extends": [
+              "dev.ucp.shopping.catalog.search",
+              "dev.ucp.shopping.catalog.lookup"
+            ],
+            "requires": {
+              "protocol": {
+                "min": "2026-08-25"
+              }
+            }
+          }
+        ]
+      },
+      "status": "success"
+    },
+    "product": {
+      "id": "gid://shopify/p/LjqaIjV2q52VuTNADsd5j",
+      "title": "Azul",
+      "description": {
+        "plain": "<p><strong>Ages:</strong> 8+</p>\n<p><strong>Players:</strong> 2-4</p>\n<p><strong>Play Time:</strong> 30-45 Minutes</p>\n<p>Introduced by the Moors,\u00a0azulejos\u00a0(originally white and blue ceramic tiles) were fully embraced by the Portuguese when their king Manuel I, on a visit to the Alhambra palace in Southern Spain, was mesmerized by the stunning beauty of the Moorish decorative tiles. The king, awestruck by the interior beauty of the Alhambra, immediately ordered that his own palace in Portugal be decorated with similar wall tiles. As a tile-laying artist, you have been challenged to embellish the walls of the Royal Palace of Evora.</p>\n<p>In the game\u00a0Azul, players take turns drafting colored tiles from suppliers to their player board. Later in the round, players score points based on how they've placed their tiles to decorate the palace. Extra points are scored for specific patterns and completing sets; wasted supplies harm the player's score. The player with the most points at the end of the game wins.</p>"
+      },
+      "handle": "azul",
+      "rating": {
+        "value": 4.7,
+        "scale_min": 1,
+        "scale_max": 5,
+        "count": 18
+      },
+      "media": [
+        {
+          "type": "image",
+          "url": "https://cdn.shopify.com/s/files/1/1704/1809/files/Azul.png",
+          "alt_text": "Azul available at 401 Games Canada",
+          "preview": {
+            "url": "https://cdn.shopify.com/s/files/1/1704/1809/files/Azul.png",
+            "width": 246,
+            "height": 246
+          },
+          "width": 246,
+          "height": 246
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.shopify.com/s/files/1/1704/1809/files/Azul-2.jpg",
+          "alt_text": "Azul",
+          "preview": {
+            "url": "https://cdn.shopify.com/s/files/1/1704/1809/files/Azul-2.jpg",
+            "width": 770,
+            "height": 770
+          },
+          "width": 770,
+          "height": 770
+        }
+      ],
+      "metadata": {
+        "unique_selling_points": [
+          "Award-winning tile-drafting game combining intricate tile placement with strategic planning for engaging, replayable gameplay."
+        ],
+        "top_features": [
+          "Tile-drafting mechanic enables creative and strategic tile placement for unique mosaics",
+          "Award-winning design recognized for its elegant gameplay and visual appeal",
+          "Supports 2 to 4 players, making it suitable for both solo and group play",
+          "Standalone game format allows for flexible play at home or with friends",
+          "Durable, tactile components ensure a satisfying and immersive experience"
+        ],
+        "tech_specs": [
+          "Players: 2-4",
+          "Recommended Age: 8 years or older",
+          "Gameplay Skills: Strategic thinking, tactical decision making, pattern recognition",
+          "Board Game Mechanics: Tile-based, strategy",
+          "Material: Cardboard",
+          "Play Time: 30-45 minutes"
+        ]
+      },
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/572495790095",
+          "title": "Azul",
+          "description": {
+            "plain": "<p><strong>Ages:</strong> 8+</p>\n<p><strong>Players:</strong> 2-4</p>\n<p><strong>Play Time:</strong> 30-45 Minutes</p>\n<p>Introduced by the Moors,\u00a0azulejos\u00a0(originally white and blue ceramic tiles) were fully embraced by the Portuguese when their king Manuel I, on a visit to the Alhambra palace in Southern Spain, was mesmerized by the stunning beauty of the Moorish decorative tiles. The king, awestruck by the interior beauty of the Alhambra, immediately ordered that his own palace in Portugal be decorated with similar wall tiles. As a tile-laying artist, you have been challenged to embellish the walls of the Royal Palace of Evora.</p>\n<p>In the game\u00a0Azul, players take turns drafting colored tiles from suppliers to their player board. Later in the round, players score points based on how they've placed their tiles to decorate the palace. Extra points are scored for specific patterns and completing sets; wasted supplies harm the player's score. The player with the most points at the end of the game wins.</p>"
+          },
+          "handle": "azul",
+          "url": "https://store.401games.ca/products/azul?variant=572495790095&_gsid=HB89GRUnCY4h&utm_source=shopify&utm_medium=catalog",
+          "price": {
+            "amount": 4495,
+            "currency": "CAD"
+          },
+          "availability": {
+            "available": true
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://cdn.shopify.com/s/files/1/1704/1809/files/Azul.png",
+              "alt_text": "Azul available at 401 Games Canada",
+              "preview": {
+                "url": "https://cdn.shopify.com/s/files/1/1704/1809/files/Azul.png",
+                "width": 246,
+                "height": 246
+              },
+              "width": 246,
+              "height": 246
+            }
+          ],
+          "seller": {
+            "id": "gid://shopify/Shop/17041809",
+            "name": "401 Games",
+            "url": "https://store.401games.ca",
+            "domain": "401games.myshopify.com",
+            "links": [
+              {
+                "type": "privacy_policy",
+                "url": "https://checkout.shopify.com/17041809/policies/39201999.html"
+              },
+              {
+                "type": "terms_of_service",
+                "url": "https://checkout.shopify.com/17041809/policies/39202063.html"
+              },
+              {
+                "type": "refund_policy",
+                "url": "https://checkout.shopify.com/17041809/policies/39201935.html"
+              }
+            ]
+          },
+          "checkout_url": "https://store.401games.ca/buy/572495790095:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=HB89GRUnCY4h&_gsid=HB89GRUnCY4h",
+          "rating": {
+            "value": 5,
+            "scale_min": 1,
+            "scale_max": 5,
+            "count": 3
+          },
+          "condition": [
+            "new"
+          ],
+          "eligible": {
+            "native_checkout": false
+          },
+          "source": "shopify"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/45906278908203",
+          "title": "Azul",
+          "description": {
+            "plain": "<div class=\"productDescription\">  <p>Build a mosaic fit for a monarch!</p>\n<p>Azul is a tile-placement game in which players compete  for the highest score by claiming tiles and arranging them on their board to score points. Extra  points are on offer for collecting sets of the same color of tile, or for creating particular  patterns, while there are penalties for taking tiles that you\u2019re unable to use. But every tile that  you claim affects what your rivals can take next. You\u2019ll have to make choices that help you without  helping them too much!</p> </div><br>"
+          },
+          "handle": "azul",
+          "url": "https://store.asmodee.com/products/azul?variant=45906278908203&_gsid=HB89GRUnCY4h&utm_source=shopify&utm_medium=catalog",
+          "price": {
+            "amount": 3199,
+            "currency": "USD"
+          },
+          "list_price": {
+            "amount": 3999,
+            "currency": "USD"
+          },
+          "availability": {
+            "available": true
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://cdn.shopify.com/s/files/1/0694/1402/7563/products/NM6010-1.jpg",
+              "alt_text": "Azul Board Game - front of box with mosaic tile art design. ",
+              "preview": {
+                "url": "https://cdn.shopify.com/s/files/1/0694/1402/7563/products/NM6010-1.jpg",
+                "width": 1024,
+                "height": 1024
+              },
+              "width": 1024,
+              "height": 1024
+            }
+          ],
+          "seller": {
+            "id": "gid://shopify/Shop/69414027563",
+            "name": "Asmodee USA",
+            "url": "https://store.asmodee.com",
+            "domain": "asmodee-na.myshopify.com",
+            "links": [
+              {
+                "type": "privacy_policy",
+                "url": "https://checkout.shopify.com/69414027563/policies/30040228139.html"
+              },
+              {
+                "type": "terms_of_service",
+                "url": "https://checkout.shopify.com/69414027563/policies/30040260907.html"
+              },
+              {
+                "type": "refund_policy",
+                "url": "https://checkout.shopify.com/69414027563/policies/30040195371.html"
+              }
+            ]
+          },
+          "checkout_url": "https://store.asmodee.com/buy/45906278908203:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=HB89GRUnCY4h&_gsid=HB89GRUnCY4h",
+          "rating": {
+            "value": 5,
+            "scale_min": 1,
+            "scale_max": 5,
+            "count": 1
+          },
+          "condition": [
+            "new"
+          ],
+          "eligible": {
+            "native_checkout": false
+          },
+          "source": "shopify"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/39780061642957",
+          "title": "Azul",
+          "description": {
+            "plain": "<p data-mce-fragment=\"1\">Build a mosaic fit for a monarch!</p>\n<p data-mce-fragment=\"1\">Azul is a tile-placement game in which players compete for the highest score by claiming tiles and arranging them on their board to score points. Extra points are on offer for collecting sets of the same color of tile, or for creating particular patterns, while there are penalties for taking tiles that you\u2019re unable to use. But every tile that you claim affects what your rivals can take next. You\u2019ll have to make choices that help you without helping them too much!</p>"
+          },
+          "handle": "azul",
+          "url": "https://www.gamersguildusa.com/products/azul?variant=39780061642957&_gsid=HB89GRUnCY4h&utm_source=shopify&utm_medium=catalog",
+          "price": {
+            "amount": 3199,
+            "currency": "USD"
+          },
+          "list_price": {
+            "amount": 4299,
+            "currency": "USD"
+          },
+          "availability": {
+            "available": true
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://cdn.shopify.com/s/files/1/0565/9705/3645/files/gamers-guild-az-next-move-games-azul-asmodee-29261980205261.jpg",
+              "alt_text": "Gamers Guild AZ Next Move Games Azul Asmodee",
+              "preview": {
+                "url": "https://cdn.shopify.com/s/files/1/0565/9705/3645/files/gamers-guild-az-next-move-games-azul-asmodee-29261980205261.jpg",
+                "width": 628,
+                "height": 630
+              },
+              "width": 628,
+              "height": 630
+            }
+          ],
+          "seller": {
+            "id": "gid://shopify/Shop/56597053645",
+            "name": "Gamers Guild AZ",
+            "url": "https://www.gamersguildusa.com",
+            "domain": "gamers-guild-az.myshopify.com",
+            "links": [
+              {
+                "type": "privacy_policy",
+                "url": "https://checkout.shopify.com/56597053645/policies/23817617613.html"
+              },
+              {
+                "type": "terms_of_service",
+                "url": "https://checkout.shopify.com/56597053645/policies/23817650381.html"
+              },
+              {
+                "type": "refund_policy",
+                "url": "https://checkout.shopify.com/56597053645/policies/23817584845.html"
+              },
+              {
+                "type": "shipping_policy",
+                "url": "https://checkout.shopify.com/56597053645/policies/23817683149.html"
+              }
+            ]
+          },
+          "checkout_url": "https://www.gamersguildusa.com/buy/39780061642957:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=HB89GRUnCY4h&_gsid=HB89GRUnCY4h",
+          "condition": [
+            "new"
+          ],
+          "eligible": {
+            "native_checkout": false
+          },
+          "source": "shopify"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/43515331838181",
+          "title": "Azul",
+          "description": {
+            "plain": "<p align=\"left\">2018 Spiel des Jahres Winner<br><br>Introduced by the Moors, azulejos (originally white and blue ceramic tiles) were fully embraced by the Portuguese when their king Manuel I, on a visit to the Alhambra palace in Southern Spain, was mesmerized by the stunning beauty of the Moorish decorative tiles. The king, awestruck by the interior beauty of the Alhambra, immediately ordered that his own palace in Portugal be decorated with similar wall tiles. As a tile-laying artist, you have been challenged to embellish the walls of the Royal Palace of Evora. <br><br>In the game Azul, players take turns drafting colored tiles from suppliers to their player board. Later in the round, players score points based on how they`ve placed their tiles to decorate the palace. Extra points are scored for specific patterns and completing sets; wasted supplies harm the player`s score. The player with the most points at the end of the game wins.</p>\n<ul class=\"unstyled\">\n<li class=\"information-attribute\">\n<span class=\"attribute-title\">Age :</span><span>\u00a0</span><span class=\"attribute-value\">8+</span>\n</li>\n<li class=\"information-attribute\">\n<span class=\"attribute-title\">Time :</span><span>\u00a0</span><span class=\"attribute-value\">30-45 min</span>\n</li>\n<li class=\"information-attribute\">\n<span class=\"attribute-title\">Number of players :</span><span>\u00a0</span><span class=\"attribute-value\">2-4</span>\n</li>\n</ul>"
+          },
+          "handle": "3289",
+          "url": "https://strategiesgames.ca/products/3289?variant=43515331838181&_gsid=HB89GRUnCY4h&utm_source=shopify&utm_medium=catalog",
+          "price": {
+            "amount": 5699,
+            "currency": "CAD"
+          },
+          "availability": {
+            "available": true
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://cdn.shopify.com/s/files/1/0659/4848/3813/products/Azul.jpg",
+              "alt_text": "Azul",
+              "preview": {
+                "url": "https://cdn.shopify.com/s/files/1/0659/4848/3813/products/Azul.jpg",
+                "width": 246,
+                "height": 247
+              },
+              "width": 246,
+              "height": 247
+            }
+          ],
+          "seller": {
+            "id": "gid://shopify/Shop/65948483813",
+            "name": "STRATEGIES Games & Hobbies",
+            "url": "https://strategiesgames.ca",
+            "domain": "strategies-games-hobbies.myshopify.com",
+            "links": [
+              {
+                "type": "privacy_policy",
+                "url": "https://checkout.shopify.com/65948483813/policies/27723137253.html"
+              },
+              {
+                "type": "terms_of_service",
+                "url": "https://checkout.shopify.com/65948483813/policies/27723170021.html"
+              },
+              {
+                "type": "refund_policy",
+                "url": "https://checkout.shopify.com/65948483813/policies/27723104485.html"
+              },
+              {
+                "type": "shipping_policy",
+                "url": "https://checkout.shopify.com/65948483813/policies/27723202789.html"
+              }
+            ]
+          },
+          "checkout_url": "https://strategiesgames.ca/buy/43515331838181:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=HB89GRUnCY4h&_gsid=HB89GRUnCY4h",
+          "condition": [
+            "new"
+          ],
+          "eligible": {
+            "native_checkout": false
+          },
+          "source": "shopify"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40018865356978",
+          "title": "Azul",
+          "description": {
+            "plain": "<p data-mce-fragment=\"1\">Introduced by the Moors,<span data-mce-fragment=\"1\">\u00a0</span><em data-mce-fragment=\"1\">azulejos</em><span data-mce-fragment=\"1\">\u00a0</span>(originally white and blue ceramic tiles) were fully embraced by the Portuguese when their king Manuel I, on a visit to the Alhambra palace in Southern Spain, was mesmerized by the stunning beauty of the Moorish decorative tiles. The king, awestruck by the interior beauty of the Alhambra, immediately ordered that his own palace in Portugal be decorated with similar wall tiles. As a tile-laying artist, you have been challenged to embellish the walls of the Royal Palace of Evora.</p>\n<p data-mce-fragment=\"1\">In the game<span data-mce-fragment=\"1\">\u00a0</span><em data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">Azul</strong></em>, players take turns drafting colored tiles from suppliers to their player board. Later in the round, players score points based on how they've placed their tiles to decorate the palace. Extra points are scored for specific patterns and completing sets; wasted supplies harm the player's score. The player with the most points at the end of the game wins.</p>"
+          },
+          "handle": "azul",
+          "url": "https://houserulesboardgames.com/products/azul?variant=40018865356978&_gsid=HB89GRUnCY4h&utm_source=shopify&utm_medium=catalog",
+          "price": {
+            "amount": 3499,
+            "currency": "USD"
+          },
+          "list_price": {
+            "amount": 4300,
+            "currency": "USD"
+          },
+          "availability": {
+            "available": true
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://cdn.shopify.com/s/files/1/0564/4019/3202/products/Azul.jpg",
+              "alt_text": "Azul",
+              "preview": {
+                "url": "https://cdn.shopify.com/s/files/1/0564/4019/3202/products/Azul.jpg",
+                "width": 1231,
+                "height": 1500
+              },
+              "width": 1231,
+              "height": 1500
+            }
+          ],
+          "seller": {
+            "id": "gid://shopify/Shop/56440193202",
+            "name": "House Rules Games",
+            "url": "https://houserulesboardgames.com",
+            "domain": "the-gaming-goat-bishop-arts.myshopify.com",
+            "links": [
+              {
+                "type": "privacy_policy",
+                "url": "https://checkout.shopify.com/56440193202/policies/28169699587.html"
+              },
+              {
+                "type": "terms_of_service",
+                "url": "https://checkout.shopify.com/56440193202/policies/28169732355.html"
+              },
+              {
+                "type": "refund_policy",
+                "url": "https://checkout.shopify.com/56440193202/policies/28169666819.html"
+              },
+              {
+                "type": "shipping_policy",
+                "url": "https://checkout.shopify.com/56440193202/policies/28169765123.html"
+              }
+            ]
+          },
+          "checkout_url": "https://houserulesboardgames.com/buy/40018865356978:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=HB89GRUnCY4h&_gsid=HB89GRUnCY4h",
+          "condition": [
+            "new"
+          ],
+          "eligible": {
+            "native_checkout": false
+          },
+          "source": "shopify"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/34997821669543",
+          "title": "Azul",
+          "description": {
+            "plain": "<p>Introduced by the Moors,\u00a0<em>azulejos</em>\u00a0(originally white and blue ceramic tiles) were fully embraced by the Portuguese when their king Manuel I, on a visit to the Alhambra palace in Southern Spain, was mesmerized by the stunning beauty of the Moorish decorative tiles. The king, awestruck by the interior beauty of the Alhambra, immediately ordered that his own palace in Portugal be decorated with similar wall tiles. As a tile-laying artist, you have been challenged to embellish the walls of the Royal Palace of Evora.</p>\n<p>In the game\u00a0<em><strong>Azul</strong></em>, players take turns drafting colored tiles from suppliers to their player board. Later in the round, players score points based on how they've placed their tiles to decorate the palace. Extra points are scored for specific patterns and completing sets; wasted supplies harm the player's score. The player with the most points at the end of the game wins.</p>"
+          },
+          "handle": "azul",
+          "url": "https://levelonegameshop.com/products/azul?variant=34997821669543&_gsid=HB89GRUnCY4h&utm_source=shopify&utm_medium=catalog",
+          "price": {
+            "amount": 3995,
+            "currency": "USD"
+          },
+          "availability": {
+            "available": true
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://cdn.shopify.com/s/files/1/0396/7320/0807/files/8c0a7586-febe-47bc-b51d-ecabf65b962e.png",
+              "alt_text": "Azul",
+              "preview": {
+                "url": "https://cdn.shopify.com/s/files/1/0396/7320/0807/files/8c0a7586-febe-47bc-b51d-ecabf65b962e.png",
+                "width": 1041,
+                "height": 1266
+              },
+              "width": 1041,
+              "height": 1266
+            }
+          ],
+          "seller": {
+            "id": "gid://shopify/Shop/39673200807",
+            "name": "Level One Game Shop",
+            "url": "https://levelonegameshop.com",
+            "domain": "levelonegameshop.myshopify.com",
+            "links": [
+              {
+                "type": "privacy_policy",
+                "url": "https://checkout.shopify.com/39673200807/policies/24107581607.html"
+              },
+              {
+                "type": "terms_of_service",
+                "url": "https://checkout.shopify.com/39673200807/policies/24107614375.html"
+              },
+              {
+                "type": "refund_policy",
+                "url": "https://checkout.shopify.com/39673200807/policies/24107548839.html"
+              },
+              {
+                "type": "shipping_policy",
+                "url": "https://checkout.shopify.com/39673200807/policies/24107647143.html"
+              }
+            ]
+          },
+          "checkout_url": "https://levelonegameshop.com/buy/34997821669543:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=HB89GRUnCY4h&_gsid=HB89GRUnCY4h",
+          "condition": [
+            "new"
+          ],
+          "eligible": {
+            "native_checkout": false
+          },
+          "source": "shopify"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/12694575054909",
+          "title": "Azul",
+          "description": {
+            "plain": "<p>As a <strong>tile-laying artist</strong>, you have been <strong>challenged to embellish the walls of the Royal Palace of \u00c9vora </strong>in Portugal.<br></p>\n<p>In the game Azul, take turns <strong>drafting colored tiles</strong> from suppliers to your player board. Score your points based on how you've placed your tiles to decorate the palace.</p>\n<p>Extra points are scored for <strong>specific patterns and completing sets</strong>. But be strategic\u2013 wasted supplies will harm your score.</p>\n<p>Receive the most points for your decoration and win the game!</p>\n<p>Check out all of the <a href=\"https://twentysidedstore.com/search?q=azul*&amp;type=product\" title=\"Azul Games and Expansions\" target=\"_blank\">Azul games and expansions</a>!</p>\n<h3>Contents</h3>\n<ul>\n<li>100 Resin Tiles</li>\n<li>4 Player Boards</li>\n<li>9 Factory Displays</li>\n<li>4 Scoring Markers</li>\n<li>1 Starting Player Marker</li>\n<li>1 Linen Bag</li>\n<li>1 Rulebook</li>\n</ul>\n<h3>Details</h3>\nPlayers: 2 - 4<br>Ages: 8+<br>Runtime: 30 - 45m<br>Designer: Michael Kiesling"
+          },
+          "handle": "azul",
+          "url": "https://twentysidedstore.com/products/azul?variant=12694575054909&_gsid=HB89GRUnCY4h&utm_source=shopify&utm_medium=catalog",
+          "price": {
+            "amount": 3999,
+            "currency": "USD"
+          },
+          "list_price": {
+            "amount": 4299,
+            "currency": "USD"
+          },
+          "availability": {
+            "available": true
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://cdn.shopify.com/s/files/1/1633/7907/products/9522_20211125_azul_1.jpg",
+              "alt_text": "Azul",
+              "preview": {
+                "url": "https://cdn.shopify.com/s/files/1/1633/7907/products/9522_20211125_azul_1.jpg",
+                "width": 1000,
+                "height": 1000
+              },
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "seller": {
+            "id": "gid://shopify/Shop/16337907",
+            "name": "Twenty Sided",
+            "url": "https://twentysidedstore.com",
+            "domain": "20-sided.myshopify.com",
+            "links": [
+              {
+                "type": "privacy_policy",
+                "url": "https://checkout.shopify.com/16337907/policies/33283984.html"
+              },
+              {
+                "type": "terms_of_service",
+                "url": "https://checkout.shopify.com/16337907/policies/33284048.html"
+              },
+              {
+                "type": "refund_policy",
+                "url": "https://checkout.shopify.com/16337907/policies/33283920.html"
+              }
+            ]
+          },
+          "checkout_url": "https://twentysidedstore.com/buy/12694575054909:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=HB89GRUnCY4h&_gsid=HB89GRUnCY4h",
+          "condition": [
+            "new"
+          ],
+          "eligible": {
+            "native_checkout": false
+          },
+          "source": "shopify"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46276672258289",
+          "title": "Azul Strategy Game by Michael Kiesling",
+          "description": {
+            "plain": "Introduced by the Moors, azulejos (originally white and blue ceramic tiles) were fully embraced by the Portuguese when their king Manuel I, on a visit to the Alhambra palace in Southern Spain, was mesmerized by the stunning beauty of the Moorish decorative tiles. The king, awestruck by the interior beauty of the Alhambra, immediately ordered that his own palace in Portugal be decorated with similar wall tiles. As a tile-laying artist, you have been challenged to embellish the walls of the Royal Palace of Evora.In the game Azul, players take turns drafting colored tiles from suppliers to their player board. Later in the round, players score points based on how they've placed their tiles to decorate the palace. Extra points are scored for specific patterns and completing sets; wasted supplies harm the player's score. The player with the most points at the end of the game wins.For Ages: 8+WARNING: Choking Hazard, Small Parts. Not For Children Under 3 Years Old"
+          },
+          "handle": "0826956600107",
+          "url": "https://shop.barnesandnoble.com/products/0826956600107?variant=46276672258289&_gsid=HB89GRUnCY4h&utm_source=shopify&utm_medium=catalog",
+          "price": {
+            "amount": 3999,
+            "currency": "USD"
+          },
+          "availability": {
+            "available": true
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://cdn.shopify.com/s/files/1/0674/5433/7265/files/0826956600107_p0.jpg",
+              "alt_text": "Azul Strategy Game by Michael Kiesling",
+              "preview": {
+                "url": "https://cdn.shopify.com/s/files/1/0674/5433/7265/files/0826956600107_p0.jpg",
+                "width": 396,
+                "height": 492
+              },
+              "width": 396,
+              "height": 492
+            }
+          ],
+          "seller": {
+            "id": "gid://shopify/Shop/67454337265",
+            "name": "Barnes & Noble",
+            "url": "https://shop.barnesandnoble.com",
+            "domain": "e9c22f-3.myshopify.com",
+            "links": [
+              {
+                "type": "privacy_policy",
+                "url": "https://checkout.shopify.com/67454337265/policies/40357200113.html"
+              },
+              {
+                "type": "terms_of_service",
+                "url": "https://checkout.shopify.com/67454337265/policies/40357232881.html"
+              }
+            ]
+          },
+          "checkout_url": "https://shop.barnesandnoble.com/buy/46276672258289:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=HB89GRUnCY4h&_gsid=HB89GRUnCY4h",
+          "condition": [
+            "new"
+          ],
+          "eligible": {
+            "native_checkout": false
+          },
+          "source": "shopify"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/31217161044062",
+          "title": "Azul",
+          "description": {
+            "plain": "<p>As a tile laying artist, Azul invites you to embellish the walls of the Royal Palace of Evora!</p>\n<div class=\"container\">\n<div class=\"row grid\">\n<div class=\"max-cols-3 min-cols-2 flex column\" style=\"text-align: center;\">\n<img src=\"https://cdn.shopify.com/s/files/1/0072/8199/9924/files/Age_New.png?3096\" alt=\"\" width=\"45px\" height=\"45px\">\n<p style=\"color: #000; font-size: 12px;\"><age>Ages: 8+</age></p>\n</div>\n<div class=\"max-cols-3 min-cols-2 flex column\" style=\"text-align: center;\">\n<img src=\"https://cdn.shopify.com/s/files/1/0072/8199/9924/files/Players_New_180x_6117014a-81ec-4c59-91ef-1c4c30fb4296.png?3096\" alt=\"\" width=\"45px\" height=\"45px\">\n<p style=\"color: #000; font-size: 12px;\"><players>Players: 2-4</players></p>\n</div>\n<div class=\"max-cols-3 min-cols-2 flex column\" style=\"text-align: center;\">\n<img src=\"https://cdn.shopify.com/s/files/1/0072/8199/9924/files/Time_New_180x_573aae1b-34a0-4858-8e89-2d74ac2b35dc.png?3096\" alt=\"\" width=\"45px\" height=\"45px\">\n<p style=\"color: #000; font-size: 12px;\"><playtime>Play Time: 30-45 min</playtime></p>\n</div>\n</div>\n</div>\n\n<p><br><description><span>Introduced by the Moors, azulejos (originally white and blue ceramic tiles) were fully embraced by the Portuguese, when their king Manuel I, on a visit to the Alhambra palace in Southern Spain, was overwhelmed by the stunning beauty of the Moorish decorative tiles. The king, awestruck by the interior beauty of the Alhambra, immediately ordered that his own palace in Portugal be decorated with similar wall tiles.</span><br></description></p>\n<p><description>The game is engaging and contemporary \u2013 players compete as artisans, decorating the walls of the Royal Palace of Evora.<br></description></p>\n<p><description><br>Contents:\n<ul>\n<li>100 Resin tiles</li>\n<li>4 Player boards</li>\n<li>9 Factory displays</li>\n<li>4 Scoring markers</li>\n<li>1 Starting player marker</li>\n<li>1 Linen bag</li>\n<li>1 Rulebook</li>\n</ul>\n</description></p>"
+          },
+          "handle": "azul",
+          "url": "https://www.redballoontoystore.com/products/azul?variant=31217161044062&_gsid=HB89GRUnCY4h&utm_source=shopify&utm_medium=catalog",
+          "price": {
+            "amount": 3999,
+            "currency": "USD"
+          },
+          "availability": {
+            "available": true
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://cdn.shopify.com/s/files/1/0072/8199/9924/products/Azul-Games-Asmodee.jpg",
+              "alt_text": "Azul-Next Move-The Red Balloon Toy Store",
+              "preview": {
+                "url": "https://cdn.shopify.com/s/files/1/0072/8199/9924/products/Azul-Games-Asmodee.jpg",
+                "width": 1024,
+                "height": 1024
+              },
+              "width": 1024,
+              "height": 1024
+            }
+          ],
+          "seller": {
+            "id": "gid://shopify/Shop/7281999924",
+            "name": "The Red Balloon Toy Store",
+            "url": "https://www.redballoontoystore.com",
+            "domain": "the-red-balloon-toy-store.myshopify.com",
+            "links": [
+              {
+                "type": "privacy_policy",
+                "url": "https://checkout.shopify.com/7281999924/policies/3983081524.html"
+              },
+              {
+                "type": "terms_of_service",
+                "url": "https://checkout.shopify.com/7281999924/policies/3983114292.html"
+              },
+              {
+                "type": "refund_policy",
+                "url": "https://checkout.shopify.com/7281999924/policies/3983048756.html"
+              },
+              {
+                "type": "shipping_policy",
+                "url": "https://checkout.shopify.com/7281999924/policies/3983147060.html"
+              }
+            ]
+          },
+          "checkout_url": "https://www.redballoontoystore.com/buy/31217161044062:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=HB89GRUnCY4h&_gsid=HB89GRUnCY4h",
+          "condition": [
+            "new"
+          ],
+          "eligible": {
+            "native_checkout": false
+          },
+          "source": "shopify"
+        },
+        {
+          "id": "gid://shopify/ProductVariant/42280582480022",
+          "title": "Azul",
+          "description": {
+            "plain": "<p>Azul was designed by the world famous, award winning game author Michael Kiesling.\u00a0 Azul captures the beautiful aesthetics of Moorish art in a contemporary board game. Players compete as artisans decorating the walls of the Royal Palace of Evora. By carefully drafting the correct quantity and style of tiles, the most clever of artisans plan ahead to maximize the beauty of their work (not to mention their scores!) while ensuring they wasted no supplies in the process.\u00a0</p><p>Introduced by the Moors, \u201cazulejos\u201d (originally white and blue ceramic tiles) were fully embraced by the Portuguese, when their King Manuel I, on a visit to the Alhambra palace in Southern Spain, was mesmerized by the stunning beauty of the Moorish decorative tiles. The king, awestruck by the interior beauty of the Alhambra, immediately ordered that his own palace in Portugal be decorated with similar wall tiles.</p><p>Azul is suited for 2 \u2013 4 artisans, ages 8+. While the actual decoration of the Royal Palace of Evora took many years, we expect a game of Azul to last 30 \u2013 40 minutes.</p><p>\u00a0</p>"
+          },
+          "handle": "azul",
+          "url": "https://www.hobbyandtoycentral.com/products/azul?variant=42280582480022&_gsid=HB89GRUnCY4h&utm_source=shopify&utm_medium=catalog",
+          "price": {
+            "amount": 5899,
+            "currency": "CAD"
+          },
+          "availability": {
+            "available": false
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://cdn.shopify.com/s/files/1/0612/7940/4182/products/NMG60010.jpg",
+              "alt_text": "Azul",
+              "preview": {
+                "url": "https://cdn.shopify.com/s/files/1/0612/7940/4182/products/NMG60010.jpg",
+                "width": 870,
+                "height": 622
+              },
+              "width": 870,
+              "height": 622
+            }
+          ],
+          "seller": {
+            "id": "gid://shopify/Shop/61279404182",
+            "name": "Hobby and Toy Central",
+            "url": "https://www.hobbyandtoycentral.com",
+            "domain": "2022-dash-test-store.myshopify.com",
+            "links": [
+              {
+                "type": "privacy_policy",
+                "url": "https://checkout.shopify.com/61279404182/policies/26233471126.html"
+              },
+              {
+                "type": "terms_of_service",
+                "url": "https://checkout.shopify.com/61279404182/policies/26233503894.html"
+              }
+            ]
+          },
+          "checkout_url": "https://www.hobbyandtoycentral.com/buy/42280582480022:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=HB89GRUnCY4h&_gsid=HB89GRUnCY4h",
+          "condition": [
+            "new"
+          ],
+          "eligible": {
+            "native_checkout": false
+          },
+          "source": "shopify"
+        }
+      ],
+      "price_range": {
+        "min": {
+          "amount": 3199,
+          "currency": "USD"
+        },
+        "max": {
+          "amount": 3999,
+          "currency": "USD"
+        }
+      },
+      "selected": []
+    }
+  }
+}

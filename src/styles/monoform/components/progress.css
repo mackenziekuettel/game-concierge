@@ -1,0 +1,25 @@
+@layer components {
+  /* --- Progress --- */
+
+  .progress {
+    @apply flex flex-wrap gap-3;
+  }
+
+  /* --- Progress parts --- */
+
+  .progress-track {
+    @apply relative flex h-1 w-full items-center overflow-x-hidden rounded-full bg-muted;
+  }
+
+  .progress-indicator {
+    @apply h-full bg-primary transition-all;
+  }
+
+  .progress-label {
+    @apply text-sm font-medium;
+  }
+
+  .progress-value {
+    @apply ml-auto text-sm tabular-nums text-muted-foreground;
+  }
+}

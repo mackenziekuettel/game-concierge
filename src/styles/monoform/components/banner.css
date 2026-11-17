@@ -1,0 +1,86 @@
+@layer components {
+  .banner {
+    @apply relative grid w-full items-center gap-y-0.5 rounded-lg border px-3 py-2.5 text-left text-sm leading-tight;
+
+    /* default neutral variant */
+    background-color: oklch(0.985 0 0);
+    color: oklch(0.35 0 0);
+    border-color: oklch(0.92 0 0);
+
+    &:has(.banner-action) { @apply pr-18; }
+
+    &:has(> .banner-icon) { @apply grid-cols-[auto_1fr] gap-x-2.5; }
+
+    /* When the banner has a description, span icon across both rows and top-align */
+    &:has(.banner-description) {
+      @apply items-start;
+
+      & > .banner-icon {
+        grid-row: 1 / span 2;
+        @apply translate-y-[3px];
+      }
+    }
+
+    & > .banner-icon {
+      @apply size-4 shrink-0 text-current;
+    }
+
+    & > .banner-description {
+      @apply pt-[0.5px]
+    }
+  }
+
+  /* --- Variants --- */
+
+  .banner-info {
+    background-color: var(--info);
+    color: var(--info-foreground);
+    border-color: oklch(from var(--info) calc(l - 0.06) c h);
+  }
+
+  .banner-success {
+    background-color: var(--success);
+    color: var(--success-foreground);
+    border-color: oklch(from var(--success) calc(l - 0.06) c h);
+  }
+
+  .banner-warning {
+    background-color: var(--warning);
+    color: var(--warning-foreground);
+    border-color: oklch(from var(--warning) calc(l - 0.06) c h);
+  }
+
+  .banner-destructive,
+  .banner-error,
+  .banner-alert {
+    background-color: var(--destructive);
+    color: var(--destructive-foreground);
+    border-color: oklch(from var(--destructive) calc(l - 0.06) c h);
+  }
+
+  /* --- Banner parts --- */
+
+  .banner-title {
+    @apply font-medium;
+
+    .banner:has(> .banner-icon) & { @apply col-start-2; }
+
+    & a {
+      @apply underline underline-offset-[3px] hover:opacity-80;
+    }
+  }
+
+  .banner-description {
+    @apply text-sm md:text-pretty opacity-90;
+
+    & a {
+      @apply underline underline-offset-[3px] hover:opacity-80;
+    }
+
+    & p:not(:last-child) { @apply mb-4; }
+  }
+
+  .banner-action {
+    @apply absolute top-2 right-2;
+  }
+}

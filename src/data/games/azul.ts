@@ -1,0 +1,35 @@
+export const azul = {
+  slug: "azul",
+  title: "Azul",
+  tagline: "Draft colourful tiles and build the most beautiful wall.",
+  designer: "Michael Kiesling",
+  image: "/images/games/azul-box.webp",
+  gallery: [
+    { src: "/images/games/azul-box.webp", alt: "Azul box", width: 1848, height: 1892 },
+    {
+      src: "/images/games/azul-components.jpg",
+      alt: "Azul box with player boards, factory discs, tiles, bag and rulebook",
+      width: 1440,
+      height: 1080,
+    },
+    {
+      src: "/images/games/azul-board.jpg",
+      alt: "Azul player board mid-game with coloured tiles on the wall",
+      width: 678,
+      height: 452,
+      fit: "cover" as const,
+    },
+  ],
+  shopifyProductId: "gid://shopify/p/LjqaIjV2q52VuTNADsd5j",
+  players: "2–4",
+  playtime: "30–45 min",
+  age: "8+",
+  complexity: 1.8,
+  timeToLearn: "About 15 min",
+  tableSpace: "Medium",
+  mood: "Calm, puzzly, quietly competitive",
+  replay: "Tiles come out differently every game, and the real tension is in what you leave behind for your opponent.",
+  similar: ["Sagrada", "Patchwork", "Cascadia"],
+  objective:
+    "Take turns drafting coloured tiles and arranging them on your board. Score points by placing tiles next to each other on your wall, and avoid taking tiles you can't use.",
+};

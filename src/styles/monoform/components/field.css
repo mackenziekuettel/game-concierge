@@ -1,0 +1,85 @@
+@layer components {
+  .field-group {
+    @apply container flex w-full flex-col gap-5;
+  }
+
+  .field-set {
+    @apply flex flex-col gap-4;
+  }
+
+  .field-legend {
+    @apply mb-1.5 font-medium;
+
+    &[data-variant="label"] { @apply text-sm; }
+    &[data-variant="legend"] { @apply text-base; }
+  }
+
+  /* --- Field --- */
+
+  .field {
+    @apply flex w-full flex-col gap-2;
+
+    &[data-invalid="true"] { @apply text-destructive; }
+    & > * { @apply w-full; }
+    & > .sr-only { width: auto; }
+  }
+
+  .field-horizontal {
+    @apply flex-row items-center;
+
+    & > * { width: auto; }
+    & > .field-label { @apply flex-auto; }
+  }
+
+  .field-responsive {
+    @apply flex-col;
+
+    & > * { @apply w-full; }
+
+    @media (min-width: 28rem) {
+      @apply flex-row items-center;
+      & > * { width: auto; }
+      & > .field-label { @apply flex-auto; }
+    }
+  }
+
+  /* --- Field parts --- */
+
+  .field-content {
+    @apply flex flex-1 flex-col gap-0.5 leading-snug;
+  }
+
+  .field-label {
+    @apply flex w-fit gap-2 text-sm leading-snug font-medium;
+
+    .field[data-disabled="true"] & { @apply opacity-50; }
+  }
+
+  .field-title {
+    @apply flex w-fit items-center gap-2 text-sm font-medium;
+
+    .field[data-disabled="true"] & { @apply opacity-50; }
+  }
+
+  .field-description {
+    @apply text-left text-sm leading-normal font-normal text-muted-foreground;
+
+    & a { @apply underline underline-offset-4 hover:text-primary; }
+  }
+
+  .field-error {
+    @apply text-sm font-normal text-destructive;
+  }
+
+  .field-separator {
+    @apply relative -my-2 h-5 text-sm;
+
+    & hr {
+      @apply absolute inset-x-0 top-1/2 border-border;
+    }
+
+    & [data-content] {
+      @apply relative mx-auto block w-fit bg-background px-2 text-muted-foreground;
+    }
+  }
+}

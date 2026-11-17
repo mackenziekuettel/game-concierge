@@ -1,17 +1,23 @@
 {
-  "name": "scaffold",
+  "name": "game-concierge",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "vitest run",
+    "shopify:test": "tsx --conditions=react-server scripts/shopify-catalog.mts test",
+    "shopify:search": "tsx --conditions=react-server scripts/shopify-catalog.mts search",
+    "shopify:product": "tsx --conditions=react-server scripts/shopify-catalog.mts product",
+    "shopify:resolve-ids": "tsx --conditions=react-server scripts/resolve-shopify-ids.mts"
   },
   "dependencies": {
     "next": "16.4.6",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "4.3.3",
@@ -21,6 +27,8 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
     "tailwindcss": "4.3.3",
-    "typescript": "^5"
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^4.1.12"
   }
 }

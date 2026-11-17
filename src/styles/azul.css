@@ -1,0 +1,157 @@
+@layer components {
+  .tile {
+    --tile-size: 2rem;
+    @apply relative inline-flex shrink-0 items-center justify-center rounded-md border border-black/10 transition-all;
+    width: var(--tile-size);
+    height: var(--tile-size);
+    background: var(--tile-bg);
+    color: var(--tile-mark);
+
+    &::after {
+      content: "";
+      @apply block;
+      width: 36%;
+      height: 36%;
+      background: currentColor;
+      opacity: 0.55;
+    }
+  }
+
+  .tile-sm { --tile-size: 1.25rem; @apply rounded-sm; }
+  .tile-xs { --tile-size: 0.875rem; @apply rounded-[3px]; }
+
+  .tile-blue { --tile-bg: oklch(0.52 0.15 255); --tile-mark: oklch(0.9 0.05 255); &::after { @apply rounded-full; } }
+  .tile-yellow { --tile-bg: oklch(0.84 0.15 88); --tile-mark: oklch(0.45 0.1 70); &::after { transform: rotate(45deg); } }
+  .tile-red { --tile-bg: oklch(0.58 0.19 28); --tile-mark: oklch(0.92 0.04 28); &::after { @apply rounded-full bg-transparent; border: 2px solid currentColor; } }
+  .tile-black { --tile-bg: oklch(0.26 0 0); --tile-mark: oklch(0.8 0 0); &::after { height: 14%; width: 50%; } }
+  .tile-white { --tile-bg: oklch(0.96 0.02 220); --tile-mark: oklch(0.55 0.08 220); &::after { clip-path: polygon(50% 0, 100% 100%, 0 100%); } }
+
+  .tile-ghost { @apply border-dashed border-foreground/15; opacity: 0.22; }
+  .tile-ghost::after { opacity: 0.3; }
+  .tile-empty { @apply border-dashed border-foreground/20 bg-muted; --tile-bg: var(--muted); &::after { display: none; } }
+
+  .tile-first {
+    --tile-bg: var(--card);
+    @apply border-foreground/30 text-[0.7rem] font-semibold text-foreground;
+    &::after { display: none; }
+  }
+
+  .tile-pickable { @apply cursor-pointer hover:-translate-y-0.5 hover:shadow-md; }
+  .tile-selected { @apply -translate-y-0.5 ring-2 ring-ring ring-offset-2 ring-offset-background; }
+  .tile-dimmed { opacity: 0.35; }
+  .tile-pop { animation: tile-pop 600ms ease-out; }
+
+  .factory {
+    @apply grid size-[5.25rem] grid-cols-2 place-content-center place-items-center gap-1 rounded-full border bg-muted/60 sm:size-24 sm:gap-1.5;
+    & .tile { --tile-size: 1.6rem; @apply sm:[--tile-size:2rem]; }
+  }
+  .factory-empty { @apply opacity-40; }
+
+  .board-md .tile:not(.tile-xs) {
+    --tile-size: 1.55rem;
+    @apply sm:[--tile-size:2rem];
+  }
+
+  .market-ring {
+    --ring-r: 122px;
+    @apply relative mx-auto size-[21rem] max-w-full sm:size-[28rem];
+    @variant sm { --ring-r: 165px; }
+  }
+  .market-slot {
+    @apply absolute -translate-x-1/2 -translate-y-1/2;
+    left: calc(50% + var(--x, 0) * var(--ring-r));
+    top: calc(50% + var(--y, 0) * var(--ring-r));
+  }
+  .market-center {
+    @apply w-32 rounded-2xl border border-dashed bg-muted/40 p-2 text-center sm:w-44 sm:p-3;
+    & .tile { --tile-size: 1.4rem; @apply sm:[--tile-size:2rem]; }
+  }
+
+  .build-source {
+    @apply cursor-grab touch-none select-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+    animation: build-nudge 1.6s ease-in-out infinite;
+    &:active { @apply cursor-grabbing; }
+  }
+  .build-target {
+    @apply cursor-pointer;
+    opacity: 0.6;
+    animation: build-pulse 1.4s ease-in-out infinite;
+  }
+  .build-ghost {
+    @apply pointer-events-none fixed z-50 -translate-x-1/2 -translate-y-1/2 scale-110 shadow-lg;
+  }
+  .build-arrow {
+    @apply pointer-events-none absolute inset-0 z-10 h-full w-full overflow-visible;
+    color: var(--ring);
+    & path:not(marker path) {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-dasharray: 6 6;
+      animation: build-dash 0.8s linear infinite;
+    }
+    & marker path { fill: currentColor; }
+  }
+  .tile-shake { animation: tile-shake 400ms ease-in-out; }
+
+  .board-target {
+    @apply cursor-pointer rounded-lg ring-2 ring-ring/40 hover:ring-ring;
+  }
+  .board-flash { animation: board-flash 1.4s ease-out; }
+}
+
+@keyframes tile-pop {
+  0% { transform: scale(1.5); box-shadow: 0 0 0 6px var(--ring); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 transparent; }
+}
+
+@keyframes build-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in oklch, var(--ring) 60%, transparent); }
+  50% { box-shadow: 0 0 0 6px color-mix(in oklch, var(--ring) 0%, transparent); }
+}
+
+@keyframes build-nudge {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+@keyframes build-dash {
+  to { stroke-dashoffset: -12; }
+}
+
+@keyframes tile-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+@keyframes board-flash {
+  0% { background: color-mix(in oklch, var(--ring) 25%, transparent); }
+  100% { background: transparent; }
+}
+
+@layer components {
+  .tour-spot {
+    @apply pointer-events-none fixed z-50 rounded-2xl;
+    box-shadow:
+      0 0 0 9999px rgb(0 0 0 / 0.5),
+      0 0 0 3px var(--ring);
+    transition: top 250ms ease, left 250ms ease, width 250ms ease, height 250ms ease;
+  }
+
+  .tile-hint {
+    @apply relative z-10;
+    animation: focus-pulse 1.4s ease-in-out infinite;
+  }
+
+  .focus-glow {
+    @apply rounded-lg;
+    animation: focus-pulse 1.4s ease-in-out infinite;
+  }
+}
+
+@keyframes focus-pulse {
+  0%, 100% { box-shadow: 0 0 0 2px var(--ring), 0 0 0 2px color-mix(in oklch, var(--ring) 50%, transparent); }
+  50% { box-shadow: 0 0 0 2px var(--ring), 0 0 0 8px color-mix(in oklch, var(--ring) 0%, transparent); }
+}

@@ -1,0 +1,50 @@
+@layer components {
+  .badge {
+    @apply inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 text-xs font-medium whitespace-nowrap transition-all;
+
+    /* default variant */
+    @apply bg-primary text-primary-foreground hover:bg-primary/80;
+
+    /* focus */
+    @apply focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50;
+
+    /* state */
+    @apply aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20;
+
+    &:has([data-icon="inline-end"]) {
+      @apply pr-1.5;
+    }
+
+    &:has([data-icon="inline-start"]) {
+      @apply pl-1.5;
+    }
+
+    & > svg {
+      pointer-events: none;
+      @apply size-3;
+    }
+  }
+
+  /* --- Variants --- */
+
+  .badge-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80;
+  }
+
+  .badge-destructive {
+    @apply bg-destructive/10 text-destructive hover:bg-destructive/20;
+    @apply focus-visible:ring-destructive/20;
+  }
+
+  .badge-outline {
+    @apply border-border bg-background text-foreground hover:bg-muted hover:text-muted-foreground;
+  }
+
+  .badge-ghost {
+    @apply hover:bg-muted hover:text-muted-foreground;
+  }
+
+  .badge-link {
+    @apply text-primary underline-offset-4 hover:underline;
+  }
+}
